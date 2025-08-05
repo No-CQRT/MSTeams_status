@@ -1,0 +1,12 @@
+[settings]
+#color check script
+pixel_coords = [ 1652, 1174,] #screen coordinates adjust it according to your screen
+mqtt_topic = "pixel/color" # MQTT topic, change it as preferred
+mqtt_host = "your.mqtt.broker.com" # MQTT broker
+mosquitto_path = "C:\\Program Files\\mosquitto\\mosquitto_pub.exe" # The installation path of mosquitto_pub
+sleep_time = 10 # Interval between updated (seconds)
+
+# GUi interface
+ini_file = "service_state.ini" #ini file used to memorize PID
+log_file = "service.log" #activity log (optional)
+script_name = "color_check.py" #path and name for check script
